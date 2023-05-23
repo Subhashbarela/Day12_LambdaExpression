@@ -16,11 +16,13 @@ namespace Day12_LambdaExpression
                  new Student(){ Id= 2,  Name="Vinesh",PhoneNumber="8765567456", Address="Chopda",Age=20, },
                  new Student(){ Id= 3, Name="Rahul",PhoneNumber="8345567456", Address="Nanded", Age=24 },
                  new Student(){ Id= 4, Name="Aptab",PhoneNumber="9749549323", Address="Pune", Age=15 },
-                 new Student(){ Id= 5, Name="Mansi",PhoneNumber="775567434", Address="Nashik", Age=25 },
+                 new Student(){ Id= 5, Name="Mansi",PhoneNumber="775567434", Address="Nashik", Age=10 },
                  new Student(){ Id= 6, Name="Mayur",PhoneNumber="9765567498", Address="Nashik", Age=18 },
-                 new Student(){ Id= 7, Name="Rajesh",PhoneNumber="9965567443", Address="Nashik", Age=30 },
+                 new Student(){ Id= 7, Name="Rajesh",PhoneNumber="9965567443", Address="Nashik", Age=12 },
+                 new Student(){ Id= 8, Name="Pranit",PhoneNumber="768543334", Address="Mumbai", Age=6 },
+                 new Student(){ Id= 9, Name="Vinesh",PhoneNumber="9965567443", Address="Nashik", Age=30 },
             };
-            Console.WriteLine("1: Create Student List And Display The Record");
+            Console.WriteLine("1: Create Student List And Display The Record \n2: Retrive Particular Record Using Linq");
             Console.WriteLine("Enter the choice");
             int choice=int.Parse(Console.ReadLine());
             switch (choice)
@@ -29,6 +31,17 @@ namespace Day12_LambdaExpression
                     {
                         LambdaExpression lambda = new LambdaExpression();
                         lambda.Display_Record(list);
+                        break;
+                    }
+                case 2:
+                    {
+                        LambdaExpression lambda = new LambdaExpression();
+                        lambda.Retrive_Records_Using_Linq(list);
+                        break;
+                    }
+                default:
+                    {
+                        Console.WriteLine("Please insert the invalid input");
                         break;
                     }
             }

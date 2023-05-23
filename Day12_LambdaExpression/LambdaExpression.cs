@@ -14,7 +14,15 @@ namespace Day12_LambdaExpression
             foreach (var item in list)
             {               
                
-                Console.WriteLine("Id : "+item.Id + " City : " + item.Age + " Name : "+ item.Name+" City : "+ item.City );
+                Console.WriteLine("Id : "+item.Id + " Name : "+ item.Name + " City : " + item.PhoneNumber+" City : " + item.Address+" City : " + item.Age);
+            }
+        } public void Retrive_Records_Using_Linq(List<Student> list)
+        {
+            var record=from student in list where student.Age >=12 && student.Age <=18 select student;
+            foreach (var item in record)
+            {
+
+                Console.WriteLine("Id : " + item.Id + " Name : " + item.Name + " City : " + item.PhoneNumber + " City : " + item.Address + " City : " + item.Age);
             }
         }
     }
