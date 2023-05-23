@@ -47,5 +47,15 @@ namespace Day12_LambdaExpression
                 Console.WriteLine(item);  
             }
         }
+        public void Display_First_Three_Record_From_List(List<Student> list)
+        {
+            var record = list.Select(x => x).Take(3);
+            foreach (var item in record)
+            {
+
+                Console.WriteLine("Id : " + item.Id + " Name : " + item.Name + " PhoneNumber : " + item.PhoneNumber + " Address : " +
+                    item.Address + " Age : " + item.Age + " Total Marks : " + item.TotalMarks);
+            }
+        }
     }
 }
