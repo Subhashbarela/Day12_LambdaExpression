@@ -14,7 +14,7 @@ namespace Day12_LambdaExpression
             foreach (var item in list)
             {               
                
-                Console.WriteLine("Id : "+item.Id + " City : " + item.Age + " Name : "+ item.Name+" City : "+ item.City );
+                Console.WriteLine("Id : "+item.Id + " Name : "+ item.Name + " City : " + item.PhoneNumber+" City : " + item.Address+" City : " + item.Age);
             }
         }
     }
