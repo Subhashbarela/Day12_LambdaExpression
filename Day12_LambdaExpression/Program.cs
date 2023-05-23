@@ -22,7 +22,8 @@ namespace Day12_LambdaExpression
                  new Student(){ Id= 8, Name="Pranit",PhoneNumber="768543334", Address="Mumbai", Age=6,TotalMarks=66 },
                  new Student(){ Id= 9, Name="Vinesh",PhoneNumber="9965567443", Address="Nashik", Age=30,TotalMarks=88 },
             };
-            Console.WriteLine("1: Create Student List And Display The Record \n2: Retrive Particular Record Using Linq \n3: Fetch DataBased On TotalMarks");
+            Console.WriteLine("1: Create Student List And Display The Record \n2: Retrive Particular Record Using Linq " +
+                "\n3: Fetch DataBased On TotalMarks\n4: Display the Address od Student");
             Console.WriteLine("Enter the choice");
             int choice=int.Parse(Console.ReadLine());
             switch (choice)
@@ -43,6 +44,12 @@ namespace Day12_LambdaExpression
                     {
                         LambdaExpression lambda = new LambdaExpression();
                         lambda.Sort_Records_Based_On_Marks(list);
+                        break;
+                    }
+                case 4:
+                    {
+                        LambdaExpression lambda = new LambdaExpression();
+                        lambda.Display_Address_Of_Student_List(list);
                         break;
                     }
                 default:

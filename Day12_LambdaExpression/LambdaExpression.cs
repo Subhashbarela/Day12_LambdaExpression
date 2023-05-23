@@ -38,5 +38,14 @@ namespace Day12_LambdaExpression
                     item.Address + " Age : " + item.Age + " Total Marks : " + item.TotalMarks);
             }
         }
+        public void Display_Address_Of_Student_List(List<Student> list)
+        {
+            var addr = list.Select(x => x.Address);
+            Console.WriteLine("Address Of Student");
+            foreach (var item in addr)
+            {
+                Console.WriteLine(item);  
+            }
+        }
     }
 }
