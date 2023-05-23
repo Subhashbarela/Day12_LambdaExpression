@@ -57,5 +57,15 @@ namespace Day12_LambdaExpression
                     item.Address + " Age : " + item.Age + " Total Marks : " + item.TotalMarks);
             }
         }
+        public void Display_Record_Based_On_Name(List<Student> list,string str)
+        {           
+            var record = list.Where(x => x.Name==str);
+            foreach (var item in record)
+            {
+
+                Console.WriteLine("Id : " + item.Id + " Name : " + item.Name + " PhoneNumber : " + item.PhoneNumber + " Address : " +
+                    item.Address + " Age : " + item.Age + " Total Marks : " + item.TotalMarks);
+            }
+        }
     }
 }
