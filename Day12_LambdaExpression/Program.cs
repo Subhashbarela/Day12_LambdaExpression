@@ -12,13 +12,13 @@ namespace Day12_LambdaExpression
         {
             var list = new List<Student>()
             {
-                 new Student(){ Id= 1, Age=29, Name="Subhash", City="Jalgaon"},
-                 new Student(){ Id= 2, Age=20, Name="Vinesh", City="Chopda" },
-                 new Student(){ Id= 3, Age=24, Name="Rahul", City="Nanded" },
-                 new Student(){ Id= 4, Age=15, Name="Aptab", City="Pune" },
-                 new Student(){ Id= 5, Age=25, Name="Mansi", City="Nashik" },
-                 new Student(){ Id= 6, Age=18 , Name="Mayur", City="Nashik"},
-                 new Student(){ Id= 7, Age=30 , Name="Rajesh", City="Nashik"},
+                 new Student(){ Id= 1, Name="Subhash",PhoneNumber="9065567412", Address="Jalgaon", Age=15},
+                 new Student(){ Id= 2,  Name="Vinesh",PhoneNumber="8765567456", Address="Chopda",Age=20, },
+                 new Student(){ Id= 3, Name="Rahul",PhoneNumber="8345567456", Address="Nanded", Age=24 },
+                 new Student(){ Id= 4, Name="Aptab",PhoneNumber="9749549323", Address="Pune", Age=15 },
+                 new Student(){ Id= 5, Name="Mansi",PhoneNumber="775567434", Address="Nashik", Age=25 },
+                 new Student(){ Id= 6, Name="Mayur",PhoneNumber="9765567498", Address="Nashik", Age=18 },
+                 new Student(){ Id= 7, Name="Rajesh",PhoneNumber="9965567443", Address="Nashik", Age=30 },
             };
             Console.WriteLine("1: Create Student List And Display The Record");
             Console.WriteLine("Enter the choice");
