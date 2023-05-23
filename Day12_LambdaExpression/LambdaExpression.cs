@@ -14,7 +14,7 @@ namespace Day12_LambdaExpression
             foreach (var item in list)
             {               
                
-                Console.WriteLine("Id : "+item.Id + " Name : "+ item.Name + " City : " + item.PhoneNumber+" City : " + item.Address+" City : " + item.Age);
+                Console.WriteLine("Id : "+item.Id + " Name : "+ item.Name + " Phone Number : " + item.PhoneNumber+" Address : " + item.Address+" Age : " + item.Age);
             }
         } public void Retrive_Records_Using_Linq(List<Student> list)
         {
@@ -22,7 +22,7 @@ namespace Day12_LambdaExpression
             foreach (var item in record)
             {
 
-                Console.WriteLine("Id : " + item.Id + " Name : " + item.Name + " City : " + item.PhoneNumber + " City : " + item.Address + " City : " + item.Age);
+                Console.WriteLine("Id : " + item.Id + " Name : " + item.Name + " Phone Number : " + item.PhoneNumber + " Address : " + item.Address + "  Age : " + item.Age);
             }
         }
     }
